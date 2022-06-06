@@ -1,0 +1,172 @@
+.mainHeader{
+    margin: 0 ;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background: #1c92d2;  
+    background: -webkit-linear-gradient(to right, #6dd5ed, #1c92d2);  
+    background: linear-gradient(to right, #6dd5ed, #1c92d2);  
+    padding: 0 40px 0 20px;
+    height: 80px;
+  }
+  .logo {
+    padding: 40px 0;
+    width: 170px;
+    height: 210px;
+    margin-right: 280px;
+    cursor: pointer;
+  }
+  .containerProduct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    padding: 0 150px;
+
+  }
+  .list {
+    display: flex;
+    font-size: 20px;
+  }
+  .btn {
+      border-radius: 50px;
+      box-sizing: border-box;
+      font-size: 15px;
+      height:30px ;
+      padding: 9px 25px 30px 25px ;
+      width: 100%;
+      border: 0;
+      cursor: pointer;
+      margin: 20px;
+      border: 3px solid rgb(210, 220, 224);
+      -webkit-transition: all .15s ease-in-out;
+      transition: all .15s ease-in-out;
+      background-color: white;
+  }
+  .link{
+    text-decoration: none;
+    color: black;
+  }
+  .btns{
+      display: flex;
+      justify-content: center;
+  }
+  .btn:hover {
+    box-shadow: 0 0 10px 0 #8bf5ea inset, 0 0 20px 2px #91cec8;
+    border: 3px solid #acefe8;
+  }
+  .hamburgerMenu{
+    display: none;
+  }
+  .f{
+    display: none;
+  }
+  
+  @media (max-width: 1390px) {
+    .logo{
+        padding: 1px 0 0 0;
+    }
+    .navbar {
+      justify-content: space-around;
+      padding-left: 1px;
+    }
+  }
+  @media (max-width: 960px) {
+    .navbar {
+      padding:0 3px;
+    }
+  }
+  @media (max-width:900px) {
+      .logo{
+          padding: 52px 300px 10px 0;
+          width: 470px;
+      }
+    .hamburgerMenu{
+      position: absolute;
+      display: block;
+      z-index: 10;
+       }
+    .menu{
+      position: relative;
+      top: 0px;
+      width: 265px;
+      height: 320px;
+       margin: 250px -30px 10px -255px;
+      background-color: rgb(243, 247, 254);
+      z-index:100;
+     opacity: 1;
+     animation-name: show;
+    animation-duration: 1s;
+  }
+  @keyframes show {
+    0%   {margin:250px -500px 10px -10px;}
+    100% {margin:250px -30px 10px -255px;}
+  }
+  a{
+    font-weight: bold;
+  }
+    .hamburger{
+      display: block; 
+      padding-bottom: 15px;
+      width: 37px;
+      height: 52px;
+    } 
+    .close{
+      background-color: rgb(243, 247, 254);
+      display: block;
+      margin-left:215px;
+      padding-top:5px;
+      width: 27px;
+      height: 270x;
+    } 
+  .navbar {
+    justify-content: space-between;
+    padding-right:8px;
+    padding-left: 0;
+  }
+ 
+  .list{
+    padding-bottom: 40px;
+  }
+    .btns{
+      margin-right: 8px;
+    }
+    .logo{
+      margin: auto;
+    }
+  }
+  
+  @media (max-width:767px) {
+   .btns{
+     margin-left: 10px;
+   }
+   .logo{
+    margin-right: -200px;
+  }
+}
+  @media (max-width:555px) {
+    .btn{
+      font-size: 12px;
+      height:20px ;
+      padding: 10px 20px 22px 20px ;
+      margin: 3px;
+    }
+    .hamburger{
+      width: 31px;
+      padding-bottom: 6px;
+      height: 36px;
+    }
+    .logo{
+      margin-right: -250px;
+      width: 420px;
+    }
+    }
+   

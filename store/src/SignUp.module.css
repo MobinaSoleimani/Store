@@ -1,0 +1,125 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-position: center;
+  }
+  .wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    padding: 50px 40px 40px;
+    background: #f0eafc;
+    border-radius: 5px;
+    color: #12243f;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+    margin: 160px 0 20px 0;
+  }
+  
+  .form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    pointer-events: none;
+    transform: skewX(-26px);
+    transform-origin: bottom left;
+  }
+  
+  .form img {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    border-radius: 50%;
+  }
+  .form h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    margin-top: 0;
+    color: #1a73e8;
+  }
+  .form .group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form .group input {
+    width: 100%;
+    font-size: 1rem;
+    padding-bottom: 7px;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #08203e;
+    margin-bottom: 3px;
+    background-color: transparent;
+    color: inherit;
+  }
+  form .group label {
+    position: absolute;
+    top: -17px;
+    left: 0;
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+  }
+   .group input:focus +label
+   {
+    color: #402fff;
+    font-size: 0.9rem;
+    transform:translateY(-10px);
+    
+  }
+  
+  input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    background-color: #1a73e8;
+    transition: all 0.2s ease-in;
+  }
+  input[type="checkbox"]:checked{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #1a73e8;
+  }
+
+  .formButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 37px;
+  }
+  .formButton button{
+    background-color: #1a73e8;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  }
+  .formButton a{
+    color: #1a73e8;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .error{
+    color: red;
+    background-color: #FADBD8;
+    font-size: 14px;
+  }
+ 
